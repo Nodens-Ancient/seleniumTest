@@ -4,7 +4,7 @@ using System.Threading;
 
 IWebDriver driver = new ChromeDriver(); 
 By destinationFieldXPath = By.XPath("//input[@id='destination']");
-By reverseButtonXPath = By.XPath("//div[@data-test-id='swap-places']");
+By reverseButtonXPath = By.XPath("//*[@data-test-id='swap-places']");
 
 driver.Navigate().GoToUrl("https://www.aviasales.by");
 driver.Manage().Window.Maximize();
